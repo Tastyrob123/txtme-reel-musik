@@ -1,0 +1,464 @@
+{
+ "1": {
+  "nr": 1,
+  "titel": "Cloud Nine",
+  "kuenstler": "LooksMusic",
+  "url": "https://pixabay.com/music/beats-cloud-nine-hip-hop-music-133-bpm-a-min-169106/",
+  "bpm": 136.0,
+  "schluss": "Schlussschlag",
+  "abschnitte": [
+   {
+    "reel": [
+     0.0,
+     2.79
+    ],
+    "song": 117.26,
+    "angleich": 0.0
+   },
+   {
+    "reel": [
+     2.79,
+     15.29
+    ],
+    "song": 120.05,
+    "angleich": 1.1
+   },
+   {
+    "reel": [
+     15.29,
+     48.46
+    ],
+    "song": 132.68,
+    "angleich": -2.1
+   },
+   {
+    "reel": [
+     48.46,
+     60.79
+    ],
+    "song": 165.16,
+    "angleich": 2.4
+   },
+   {
+    "reel": [
+     60.79,
+     68.13
+    ],
+    "song": 177.8,
+    "angleich": -1.5
+   },
+   {
+    "reel": [
+     68.13,
+     69.04
+    ],
+    "song": 118.26,
+    "angleich": -1.2
+   },
+   {
+    "reel": [
+     69.04,
+     72.62
+    ],
+    "song": 185.02,
+    "angleich": 0
+   }
+  ]
+ },
+ "2": {
+  "nr": 2,
+  "titel": "Synthwave",
+  "kuenstler": "Sub_Clair",
+  "url": "https://pixabay.com/music/synthwave-synthwave-628003/",
+  "bpm": 103.4,
+  "schluss": "Outro",
+  "abschnitte": [
+   {
+    "reel": [
+     0.0,
+     2.79
+    ],
+    "song": 2.97,
+    "angleich": 0.0
+   },
+   {
+    "reel": [
+     2.79,
+     15.29
+    ],
+    "song": 5.76,
+    "angleich": 0.7
+   },
+   {
+    "reel": [
+     15.29,
+     48.46
+    ],
+    "song": 18.34,
+    "angleich": 3.4
+   },
+   {
+    "reel": [
+     48.46,
+     60.79
+    ],
+    "song": 52.64,
+    "angleich": 1.8
+   },
+   {
+    "reel": [
+     60.79,
+     67.86
+    ],
+    "song": 65.2,
+    "angleich": -3.1
+   },
+   {
+    "reel": [
+     67.86,
+     69.04
+    ],
+    "song": 88.07,
+    "angleich": -3.5
+   },
+   {
+    "reel": [
+     69.04,
+     72.62
+    ],
+    "song": 74.35,
+    "angleich": 0
+   }
+  ]
+ },
+ "3": {
+  "nr": 3,
+  "titel": "Synthwave",
+  "kuenstler": "AtlasAudio",
+  "url": "https://pixabay.com/music/synthwave-synthwave-625677/",
+  "bpm": 95.7,
+  "schluss": "Schlussschlag",
+  "abschnitte": [
+   {
+    "reel": [
+     0.0,
+     2.79
+    ],
+    "song": 77.87,
+    "angleich": 0.0
+   },
+   {
+    "reel": [
+     2.79,
+     15.29
+    ],
+    "song": 80.67,
+    "angleich": 1.1
+   },
+   {
+    "reel": [
+     15.29,
+     38.25
+    ],
+    "song": 93.3,
+    "angleich": -0.9
+   },
+   {
+    "reel": [
+     38.25,
+     48.46
+    ],
+    "song": 75.63,
+    "angleich": -1.0
+   },
+   {
+    "reel": [
+     48.46,
+     60.79
+    ],
+    "song": 85.73,
+    "angleich": 2.4
+   },
+   {
+    "reel": [
+     60.79,
+     69.04
+    ],
+    "song": 98.36,
+    "angleich": -0.4
+   },
+   {
+    "reel": [
+     69.04,
+     72.62
+    ],
+    "song": 118.56,
+    "angleich": 0
+   }
+  ]
+ },
+ "4": {
+  "nr": 4,
+  "titel": "Dark Synthwave",
+  "kuenstler": "Kulakovka",
+  "url": "https://pixabay.com/music/synthwave-dark-synthwave-624644/",
+  "bpm": 99.4,
+  "schluss": "Schlussschlag",
+  "abschnitte": [
+   {
+    "reel": [
+     0.0,
+     2.79
+    ],
+    "song": 15.88,
+    "angleich": 0.0
+   },
+   {
+    "reel": [
+     2.79,
+     15.29
+    ],
+    "song": 18.67,
+    "angleich": 0.7
+   },
+   {
+    "reel": [
+     15.29,
+     38.98
+    ],
+    "song": 31.25,
+    "angleich": 1.3
+   },
+   {
+    "reel": [
+     38.98,
+     48.46
+    ],
+    "song": 71.63,
+    "angleich": -0.5
+   },
+   {
+    "reel": [
+     48.46,
+     60.79
+    ],
+    "song": 81.06,
+    "angleich": -2.7
+   },
+   {
+    "reel": [
+     60.79,
+     69.04
+    ],
+    "song": 93.07,
+    "angleich": 1.9
+   },
+   {
+    "reel": [
+     69.04,
+     72.62
+    ],
+    "song": 131.33,
+    "angleich": 0
+   }
+  ]
+ },
+ "5": {
+  "nr": 5,
+  "titel": "Dark Synthwave Instrumental",
+  "kuenstler": "Sub_Clair",
+  "url": "https://pixabay.com/music/synthwave-dark-synthwave-instrumental-622540/",
+  "bpm": 112.3,
+  "schluss": "Schlussschlag",
+  "abschnitte": [
+   {
+    "reel": [
+     0.0,
+     2.79
+    ],
+    "song": 14.72,
+    "angleich": 0.0
+   },
+   {
+    "reel": [
+     2.79,
+     15.29
+    ],
+    "song": 17.51,
+    "angleich": 0.3
+   },
+   {
+    "reel": [
+     15.29,
+     48.46
+    ],
+    "song": 30.05,
+    "angleich": -1.3
+   },
+   {
+    "reel": [
+     48.46,
+     60.79
+    ],
+    "song": 62.79,
+    "angleich": -2.7
+   },
+   {
+    "reel": [
+     60.79,
+     69.04
+    ],
+    "song": 74.79,
+    "angleich": -0.9
+   },
+   {
+    "reel": [
+     69.04,
+     72.62
+    ],
+    "song": 172.41,
+    "angleich": 0
+   }
+  ]
+ },
+ "6": {
+  "nr": 6,
+  "titel": "Gym Motivation",
+  "kuenstler": "Kulakovka",
+  "url": "https://pixabay.com/music/electronic-gym-motivation-620569/",
+  "bpm": 129.2,
+  "schluss": "Schlussschlag",
+  "abschnitte": [
+   {
+    "reel": [
+     0.0,
+     2.79
+    ],
+    "song": 75.34,
+    "angleich": 0.0
+   },
+   {
+    "reel": [
+     2.79,
+     15.29
+    ],
+    "song": 78.14,
+    "angleich": 2.7
+   },
+   {
+    "reel": [
+     15.29,
+     48.46
+    ],
+    "song": 90.98,
+    "angleich": -0.3
+   },
+   {
+    "reel": [
+     48.46,
+     60.79
+    ],
+    "song": 124.04,
+    "angleich": -3.2
+   },
+   {
+    "reel": [
+     60.79,
+     62.63
+    ],
+    "song": 135.98,
+    "angleich": 1.3
+   },
+   {
+    "reel": [
+     62.63,
+     69.04
+    ],
+    "song": 74.44,
+    "angleich": 0.2
+   },
+   {
+    "reel": [
+     69.04,
+     72.62
+    ],
+    "song": 144.4,
+    "angleich": 0
+   }
+  ]
+ },
+ "7": {
+  "nr": 7,
+  "titel": "Upbeat Advertising (Only Time)",
+  "kuenstler": "BombinSound",
+  "url": "https://pixabay.com/music/future-bass-upbeat-advertising-version-2-only-time-626849/",
+  "bpm": 152.0,
+  "schluss": "Schlussschlag",
+  "abschnitte": [
+   {
+    "reel": [
+     0.0,
+     2.79
+    ],
+    "song": 4.45,
+    "angleich": 0.0
+   },
+   {
+    "reel": [
+     2.79,
+     15.29
+    ],
+    "song": 7.24,
+    "angleich": 2.5
+   },
+   {
+    "reel": [
+     15.29,
+     29.51
+    ],
+    "song": 20.06,
+    "angleich": 1.3
+   },
+   {
+    "reel": [
+     29.51,
+     48.46
+    ],
+    "song": 40.84,
+    "angleich": 1.4
+   },
+   {
+    "reel": [
+     48.46,
+     56.68
+    ],
+    "song": 60.07,
+    "angleich": -2.6
+   },
+   {
+    "reel": [
+     56.68,
+     60.79
+    ],
+    "song": 5.67,
+    "angleich": -2.3
+   },
+   {
+    "reel": [
+     60.79,
+     69.04
+    ],
+    "song": 9.68,
+    "angleich": -3.5
+   },
+   {
+    "reel": [
+     69.04,
+     72.62
+    ],
+    "song": 69.66,
+    "angleich": 0
+   }
+  ]
+ }
+}

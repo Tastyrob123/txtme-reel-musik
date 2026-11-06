@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>txtme.social Reel — Musik</title>
+<style>
+  @font-face{font-family:SG;src:url(SpaceGrotesk.woff2) format('woff2');font-weight:300 700}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#0b0b0c;color:#efece6;font-family:SG,system-ui,sans-serif;min-height:100vh;display:grid;grid-template-columns:1fr 1fr;gap:48px;padding:48px}
+  .phone{justify-self:end;width:min(420px,90vw);aspect-ratio:9/16;background:#000;border-radius:44px;padding:12px;border:1px solid #2a2a2e;position:sticky;top:48px}
+  .phone video{width:100%;height:100%;border-radius:34px;object-fit:cover;background:#000}
+  h1{font-size:28px;font-weight:500;letter-spacing:-.01em}
+  .grad{background:linear-gradient(100deg,#60c4e3,#eb5986);-webkit-background-clip:text;color:transparent}
+  p{color:#8a8781;margin-top:10px;line-height:1.5;max-width:52ch}
+  .songs{margin-top:28px;display:grid;gap:10px;max-width:560px}
+  .song{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:14px;padding:14px 16px;border-radius:18px;border:1px solid #1f1f22;background:#111113;cursor:pointer;transition:border-color .2s,background .2s}
+  .song:hover{border-color:#34343a}
+  .song.an{border-color:transparent;background:linear-gradient(#141416,#141416) padding-box,linear-gradient(100deg,#60c4e3,#eb5986) border-box;border:1px solid transparent}
+  .nr{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:18px;font-weight:500;background:#1b1b1e}
+  .song.an .nr{background:linear-gradient(100deg,#60c4e3,#eb5986);color:#0b0b0c}
+  .ti{font-size:16px}.ku{font-size:13px;color:#8a8781;margin-top:2px}
+  .song a{font-size:12px;color:#8a8781;text-decoration:none;border:1px solid #2a2a2e;border-radius:999px;padding:5px 10px}
+  .song a:hover{color:#efece6}
+  .sprung{margin-top:26px;display:flex;flex-wrap:wrap;gap:8px;max-width:560px}
+  .sprung button{font:inherit;font-size:13px;color:#efece6;background:#151517;border:1px solid #2a2a2e;border-radius:999px;padding:7px 13px;cursor:pointer}
+  .sprung button:hover{border-color:#60c4e3}
+  @media (max-width:900px){body{grid-template-columns:1fr;padding:16px;gap:24px}.phone{justify-self:center;position:static}}
+</style>
+</head>
+<body>
+  <div class="phone"><video id="v" controls playsinline></video></div>
+  <div>
+    <h1><span class="grad">txtme.social</span> · Reel, Musik zur Wahl</h1>
+    <p>Sieben Fassungen, Bild gleich, nur die Musik anders. Jede auf das Reel geschnitten: der Höhepunkt des Songs kommt mit der ersten Frage, jede Fragen-Tafel und der Abspann sitzen auf dem Schlag. Beim Wechseln läuft das Video an derselben Stelle weiter. Alle Songs von Pixabay, frei nutzbar.</p>
+    <div class="songs" id="s"></div>
+    <div class="sprung" id="j"></div>
+  </div>
+<script>
+const v = document.getElementById('v');
+const SPRUNG = [['Anfang', 0], ['Frage 1', 2.4], ['Artikel', 20.8], ['Frage 2', 14.9], ['Polaroids', 39.2], ['Frage 3', 48.1], ['Frage 4', 60.4], ['Abspann', 68.6]];
+let an = null;
+function waehle(nr, el) {
+  const t = v.currentTime, lief = !v.paused;
+  v.src = nr ? `v/reel-${nr}.mp4` : `v/reel-0.mp4`;
+  v.addEventListener('loadedmetadata', () => { v.currentTime = t; if (lief) v.play(); }, { once: true });
+  document.querySelectorAll('.song').forEach(s => s.classList.toggle('an', s === el)); an = nr;
+  try { localStorage.setItem('reel-musik', nr); } catch (e) {}
+}
+fetch('fassungen.json?' + Date.now()).then(r => r.json()).then(d => {
+  const box = document.getElementById('s');
+  const liste = Object.values(d).sort((a, b) => a.nr - b.nr);
+  liste.push({ nr: 0, titel: 'Bisher: RKN-Set', kuenstler: 'Lyrianne J · RKN @ ADE 2025', url: '' });
+  liste.forEach(f => {
+    const el = document.createElement('div'); el.className = 'song';
+    el.innerHTML = `<div class="nr">${f.nr || '–'}</div><div><div class="ti">${f.titel}</div><div class="ku">${f.kuenstler}${f.bpm ? ' · ' + Math.round(f.bpm) + ' bpm' : ''}</div></div>${f.url ? `<a href="${f.url}" target="_blank" rel="noopener">Pixabay</a>` : '<span></span>'}`;
+    el.onclick = e => { if (e.target.tagName !== 'A') waehle(f.nr, el); };
+    box.appendChild(el);
+  });
+  let start = 1; try { const g = localStorage.getItem('reel-musik'); if (g !== null && (g === '0' || d[g])) start = +g; } catch (e) {}
+  waehle(start, [...box.children][start ? liste.findIndex(f => f.nr === start) : liste.length - 1]);
+});
+const j = document.getElementById('j');
+SPRUNG.sort((a, b) => a[1] - b[1]).forEach(([n, t]) => { const b = document.createElement('button'); b.textContent = n; b.onclick = () => { v.currentTime = t; v.play(); }; j.appendChild(b); });
+</script>
+</body>
+</html>
